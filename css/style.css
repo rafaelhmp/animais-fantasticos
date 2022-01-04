@@ -150,9 +150,33 @@ body {
 }
 
 .faq-lista dd {
-  font-family: Helvetica ,Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin-bottom: .5rem;
   margin-left: 30px;
 }
 
 /* CONTATO */
+
+.mapa {
+  grid-column: 2;
+}
+
+.dados {
+  grid-column: 3;
+}
+
+.dados li {
+  margin-bottom: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.dados li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #FB5;
+}
+
+/* FOOTER */
