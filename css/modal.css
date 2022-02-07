@@ -6,9 +6,13 @@
   top: 0;
   left: 0;
   z-index: 2000;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+}
+
+.modal-container.ativo {
+  display: flex;
 }
 
 .modal {
@@ -47,10 +51,6 @@
   width: 100%;
   padding: 0.7rem 0.5rem;
   box-sizing: border-box;
-}
-
-.modal-container.ativo {
-  display: flex;
 }
 
 .modal button[type="submit"] {
