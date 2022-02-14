@@ -1,6 +1,6 @@
 export default function initScrollSuave() {
   const linksInternos = document.querySelectorAll(
-    '[data-menu="suave"] a[href^="#"]'
+    '[data-tab="suave"] a[href^="#"]'
   );
 
   function scrollToSection(event) {
