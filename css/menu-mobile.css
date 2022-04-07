@@ -45,10 +45,6 @@
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .js [data-menu="list"] li {
-    padding-left: 5px;
-  }
-
   .js [data-menu="list"].active {
     display: block;
     animation: show 0.3s forwards;
