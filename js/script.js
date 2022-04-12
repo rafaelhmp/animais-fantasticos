@@ -35,12 +35,12 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-const funcionamento = new Funcionamento("[data-semana]", "active");
+const funcionamento = new Funcionamento("[data-semana]", "aberto");
 funcionamento.init();
+
+fetchAnimais('../../animaisapi.json', '.numeros-grid');
+fetchBitcoin("https://blockchain.info/ticker", '.btc-preco');
 
 const slide = new SlideNav('.slide', '.slide-wrapper');
 slide.init();
 slide.addControl('.custom-controls');
-
-fetchAnimais('../../animaisapi.json', '.numeros-grid');
-fetchBitcoin("https://blockchain.info/ticker", '.btc-preco');
