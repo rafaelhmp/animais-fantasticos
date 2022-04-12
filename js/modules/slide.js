@@ -139,12 +139,14 @@ export class Slide {
   }
 
   init() {
-    this.bindEvents();
-    this.transition(true);
-    this.addSlideEvents();
-    this.slidesConfig();
-    this.addResizeEvent();
-    this.changeSlide(0);
+    if(this.slide && this.wrapper) {
+      this.bindEvents();
+      this.transition(true);
+      this.addSlideEvents();
+      this.slidesConfig();
+      this.addResizeEvent();
+      this.changeSlide(0);
+  }
     return this;
   }
 }
